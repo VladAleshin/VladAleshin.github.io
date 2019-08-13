@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
     <meta charset="utf-8">
+    <title>Object Detector - Vladimir Iashin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    <title> Vladislav Aleshin </title>
   </head>
-    
+
   <body>
-    
-    <ul class="breadcrumb" style="color: white">
-      Main
-    </ul>
-    
-    <h1> Vladislav Aleshin </h1>
-    
-    <ul class='social_buttons'>
-      <li class='social_buttons'>
-        <a href="https://github.com/v-iashin" class='social'> GitHub </a>
-      </li>      
-    </ul>
-    
-    <hr>
-    
-    <h1> Project </h1>  
       
-    <div class="row">
-      <div class="column_left">
-        <a href='detector.html'>
-          <img class='thumbnail' onmouseover='this.src="images/typical_russian_day_orig.jpeg"' 
-onmouseout='this.src="images/typical_russian_day_res.jpeg"' src='images/typical_russian_day_res.jpeg' />
-        </a>
-      </div>
-      <div class="column_right">
-          <a href='detector.html' class='project'> Image-captioning </a> 
-          <p class='project_description'> A real-time object detector. Upload an image and see what is on it </p>
-          <ul class='proj_buttons'>
-            <li class='proj_buttons'>
-              <a href='detector.html' class='proj_buttons'> Demo </a>
-            </li>
-            <li class='proj_buttons'>
-              <a href='https://github.com/v-iashin/PersonalProjects/tree/master/detector' class='proj_buttons'> Code </a>
-            </li>
-          </ul>
-      </div>
+    <ul class="breadcrumb">
+      <a class='bread_crumb' href="index.html">Main</a> / Object Detector
+    </ul>
+    
+    <h1> Object Detection Project </h1>
+    
+    <p>
+      This is an object detector. Just upload an image with some objects on it and give it a try!
+    </p>
+    
+    <p class='disclaimer'>
+      <b> Disclaimer</b>: please don't use personal photos that you don't want me to see.
+    </p>
+    
+    <!-- buttons -->
+    <div class="buttons">
+      <!-- input file -->
+      <label id="upload" for="file-input" class="btn upload"> Upload </label>
+      <input id="file-input" type="file" accept="image/*">
+      <!-- detect -->
+      <button id='detect' class='btn detect hide'> Detect </button>
+      <!-- reload -->
+      <button id='reload' class='btn reload hide' onclick='reload()'> Reset ↻ </button>
+    </div>
+
+    <!-- image box -->      
+    <div class="preview">
     </div>
     
+    <footer class="version">
+      Detection Project v. 0 (<span id='status'></span>)
+    </footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+    <script src="js/upload_handler.js"></script>
+    <script src="js/status_checker.js"></script>
   </body>
 </html>
