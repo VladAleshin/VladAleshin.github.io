@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Data science portfolio by Vladislav Aleshin</title>
-  <style>
-   .center {
-    width: 1000px; /* Ширина элемента в пикселах */
-    padding: 10px; /* Поля вокруг текста */
-    margin: auto; /* Выравниваем по центру */    
-   }   
-  </style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title> Vladimir Iashin </title>
+  </head>
+    
+  <body>
+    
+    <ul class="breadcrumb" style="color: white">
+      Main
+    </ul>
+    
+    <h1> Vladimir Iashin </h1>
 
- </head>
- <body>
-  <div class="center">
-   <h2>Data science projects and competitions</h2>           
-   <h3>Kaggle competitions</h3>      
-   <p> <b><a href="https://www.kaggle.com/c/flight-delays-fall-2018">Flight delays</a></b> - the goal of this competition is to predict whether a flight will be delayed for more than 15 minutes. <br> 
-    In this competition I applied a catboost classification model, that allowed 
-    me to beat the baseline with ROC AUC score about 0.94. <br> 
-    The nbviewer is  <a href="https://github.com/VladAleshin/-kaggle-competitions/blob/master/Flight%20delays.ipynb">here</a>    
+    <p>
+      I am a machine learning enthusiast living in Tampere, Finland. Particularly interested in computer vision and deep learning.
     </p>
-  </div>
- </body>
+
+    <ul class='social_buttons'>
+      <li class='social_buttons'>
+        <a href="https://github.com/v-iashin" class='social'> GitHub </a>
+      </li>
+      <li class='social_buttons'>
+        <a href="https://www.linkedin.com/in/vladimir-iashin/" class='social'> LinkedIn </a>
+      </li>
+    </ul>
+    
+    <hr>
+    
+    <h1> Project </h1>  
+      
+    <div class="row">
+      <div class="column_left">
+        <a href='detector.html'>
+          <img class='thumbnail' onmouseover='this.src="images/typical_russian_day_orig.jpeg"' 
+onmouseout='this.src="images/typical_russian_day_res.jpeg"' src='images/typical_russian_day_res.jpeg' />
+        </a>
+      </div>
+      <div class="column_right">
+          <a href='detector.html' class='project'> Object Detector </a> 
+          <p class='project_description'> A real-time object detector. Upload an image and see what is on it </p>
+          <ul class='proj_buttons'>
+            <li class='proj_buttons'>
+              <a href='detector.html' class='proj_buttons'> Demo </a>
+            </li>
+            <li class='proj_buttons'>
+              <a href='https://github.com/v-iashin/PersonalProjects/tree/master/detector' class='proj_buttons'> Code </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    
+  </body>
 </html>
