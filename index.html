@@ -7,36 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="stylesheet" href="./style.css">    
   </head>
-
   <body>     
-    
     <h1> Image captioning project </h1>    
     <p>
       Just upload the image...
     </p> 
-    
-    <!-- buttons -->
-    <div class="buttons">
-      <!-- input file -->
-      <label id="upload" for="file-input" class="btn upload"> Upload </label>
-      <input id="file-input" type="file" accept="image/*">
-      <!-- detect -->
-      <button id='detect' class='btn detect hide'> Detect </button>
-      <!-- reload -->
-      <button id='reload' class='btn reload hide' onclick='reload()'> Reset ↻ </button>
-    </div>
-
-    <!-- image box -->      
-    <div class="preview">
-    </div>
-    
-    <footer class="version">
-      Detection Project v. 0 (<span id='status'></span>)
-    </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
-    <script src="js/upload_handler.js"></script>
-    <script src="js/status_checker.js"></script>
   </body>
 </html>
