@@ -4,7 +4,7 @@ html,body
   margin: 0em;
   padding: 0em;
   overflow-x: hidden; 
-  text-align: left;
+  text-align: center;
   font-family: monospace;
   color: #333;
 }
